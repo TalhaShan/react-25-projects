@@ -7,6 +7,7 @@ export default function QRCodeGenerator() {
 
   function handleGenerateQrCode() {
     setQrCode(input);
+    setInput("");
   }
 
   return (
@@ -16,6 +17,7 @@ export default function QRCodeGenerator() {
         <input
           type="text"
           name="qr-code"
+          value={input}
           placeholder="Enter value"
           onChange={(e) => setInput(e.target.value)}
         />
