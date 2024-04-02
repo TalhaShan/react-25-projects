@@ -11,6 +11,10 @@ import QRCodeGenerator from './components/qr-code-generator';
 import LightDarkMode from './components/light-dark';
 import ScrollIndicator from './components/scroll-indicator';
 import TabTest from './components/custom-tabs/tab-test';
+import ModalTest from './components/custom-modal/modal-test';
+import GitthubProfileFinder from './components/github-profile-finder';
+import SearchAutoComplete from './components/serach-auto-complete';
+import TicTacToe from './components/tic-tac-toe';
 
 function App() {
   return (
@@ -26,9 +30,15 @@ function App() {
    
         <QRCodeGenerator />
         <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
-         */
 
         <TabTest />
+        <ModalTest />
+
+        <GitthubProfileFinder />
+        <SearchAutoComplete />
+        */
+        <TicTacToe />
+
       }
     </div>
   );
