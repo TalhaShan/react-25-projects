@@ -15,6 +15,12 @@ import ModalTest from './components/custom-modal/modal-test';
 import GitthubProfileFinder from './components/github-profile-finder';
 import SearchAutoComplete from './components/serach-auto-complete';
 import TicTacToe from './components/tic-tac-toe';
+import FeatureFlagGlobalState from './components/feature-flag/context';
+import FeatureFlags from './components/feature-flag';
+import UseFetchHookTest from './components/use-fetch/test';
+import UseOneClickOutsideTest from './components/use-outside-click/test';
+import UseWindowResizeTest from './components/use-window-resize/test';
+import ScrollToTopAndBottom from './components/scroll-top-bottom';
 
 function App() {
   return (
@@ -36,8 +42,17 @@ function App() {
 
         <GitthubProfileFinder />
         <SearchAutoComplete />
-        */
         <TicTacToe />
+        
+        <FeatureFlagGlobalState>
+          <FeatureFlags />
+        </FeatureFlagGlobalState>
+        <UseFetchHookTest />
+      
+        <UseOneClickOutsideTest />
+       <UseWindowResizeTest />
+        */
+        <ScrollToTopAndBottom />
 
       }
     </div>
